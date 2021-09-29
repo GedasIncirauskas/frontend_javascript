@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="../style.css" />
+    <script type="module" src="./register.js" defer></script>
+    <title>Register</title>
+  </head>
+  <body>
+    <header class="container">
+      <div class="header_wrapper">
+        <img src="../assets/google logo.png" alt="Google logo" />
+        <h2>Split Bill</h2>
+        <p>BEST IN MARKET</p>
+      </div>
+    </header>
+    <div class="form_wrapper">
+      <form id="register">
+        <label for="full_name">Full name</label>
+        <input type="text" name="full_name" min="3" required />
+        <label for="email">Email</label>
+        <input type="email" name="email" min="3" max="255" required />
+        <label for="password">Password</label>
+        <input type="password" name="password" min="6" max="255" required />
+        <label for="password_rep">Repeat Password</label>
+        <input type="password" name="password_rep" min="6" max="255" required />
+        <button type="submit">Register</button>
+        <p>Have an account? <a href="../Login/login.html">Login</a></p>
+      </form>
+    </div>
+  </body>
+  <footer>Gedas Inčirauskas | Split Bill</footer>
+</html>

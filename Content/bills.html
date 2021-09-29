@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="../style.css" />
+    <script type="module" src="./bills.js" defer></script>
+    <title>Bills</title>
+  </head>
+  <body>
+    <div class="nav">
+      <nav class="navigation">
+        <a href="../Content/groups.html">Menu</a>
+        <button id="logout">Log out</button>
+      </nav>
+    </div>
+    <header class="container">
+      <div class="header_wrapper">
+        <img src="../assets/google logo.png" alt="Google logo" />
+        <h2>Split Bill</h2>
+      </div>
+    </header>
+    <section class="container">
+      <p>Groups's bills:</p>
+      <div class="table_wrapper" id="not_show">
+        <table>
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Description</th>
+              <th>Amount</th>
+            </tr>
+          </thead>
+          <tbody id="app"></tbody>
+        </table>
+      </div>
+    </section>
+    <div class="form_wrapper" id="not_show">
+      <h2>Add bill</h2>
+      <form id="add_bill">
+        <label for="amount" id="label_group">Amount</label>
+        <input type="number" name="amount" min="1" step="0.01" required />
+        <label for="description" id="label_group">Description:</label>
+        <input type="text" name="description" min="5" required />
+        <button type="submit">Add</button>
+      </form>
+    </div>
+  </body>
+  <footer>Gedas Inčirauskas | Split Bill</footer>
+</html>

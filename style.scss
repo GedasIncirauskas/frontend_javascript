@@ -1,0 +1,125 @@
+$primary: rgb(255, 255, 255);
+$border_color: rgb(216, 216, 216);
+$text-color: rgb(169, 169, 169);
+$invalid-color: rgb(255, 0, 0);
+$parameter: 0.5rem;
+
+//Main wrapper
+.container {
+  margin: 4rem auto 0 auto;
+  width: 80%;
+  .header_wrapper {
+    text-align: center;
+  }
+  img {
+    width: 3rem;
+  }
+  h2,
+  p {
+    margin: $parameter 0;
+    text-align: center;
+  }
+}
+
+//Navigation
+.nav {
+  margin: 1rem auto 0 auto;
+  width: 70%;
+}
+
+.navigation {
+  text-align: right;
+  a {
+    text-decoration: none;
+    border: 0.01rem solid rgb(0, 0, 0);
+    padding: 0.5rem 1rem;
+    color: rgb(0, 0, 0);
+    &:hover {
+      background-color: rgb(52, 168, 83);
+    }
+  }
+  button {
+    background-color: rgb(255, 255, 255);
+    padding: 0.45rem 1rem;
+    &:hover {
+      background-color: $invalid-color;
+    }
+  }
+}
+
+//Form wrapper
+.form_wrapper {
+  margin: 2rem auto 0 auto;
+  width: 20%;
+  min-height: 35vh;
+  label,
+  button {
+    display: block;
+    margin: $parameter 0 0 0;
+    background-color: $primary;
+  }
+  input {
+    width: 100%;
+    margin: $parameter 0;
+  }
+  #label_group {
+    font-weight: bold;
+  }
+}
+
+//Content blocks
+.main_block {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.blocks {
+  margin-right: 2rem;
+  margin-top: 1rem;
+  width: calc(20% - 7em);
+  text-align: center;
+  border: 0.2rem solid $border_color;
+  border-radius: $parameter;
+  padding: 1rem 2rem;
+  p {
+    margin: $parameter;
+    color: $text-color;
+  }
+}
+
+//Error style
+.invalid {
+  margin: $parameter auto;
+  text-align: center;
+  border: 0.2rem solid $invalid-color;
+  border-radius: $parameter;
+  padding: 1rem 2rem;
+  font-size: 2rem;
+  box-shadow: 0.1rem 1rem 4rem $invalid-color;
+}
+
+//Table
+.table_wrapper {
+  background-color: rgba(24, 24, 24, 0.022);
+  padding: 3rem;
+  border-radius: $parameter;
+  margin: 2rem 0;
+  table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+
+  th,
+  td {
+    padding: $parameter;
+    text-align: center;
+    border-bottom: 0.1rem solid rgba(80, 80, 80, 0.166);
+  }
+}
+
+//Footer
+footer {
+  text-align: center;
+  color: $text-color;
+  padding: 2rem 0 1rem 0;
+}
