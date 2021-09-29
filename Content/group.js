@@ -83,5 +83,5 @@ document.getElementById("add_group").addEventListener("submit", (e) => {
 //Log out button
 document.getElementById("logout").addEventListener("click", () => {
   localStorage.removeItem("token");
-  window.location.pathname = "../Login/lgin.html";
+  window.location.pathname = "../Login/login.html";
 });
