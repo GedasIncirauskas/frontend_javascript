@@ -87,17 +87,6 @@ $parameter: 0.5rem;
   }
 }
 
-//Error style
-.invalid {
-  margin: $parameter auto;
-  text-align: center;
-  border: 0.2rem solid $invalid-color;
-  border-radius: $parameter;
-  padding: 1rem 2rem;
-  font-size: 2rem;
-  box-shadow: 0.1rem 1rem 4rem $invalid-color;
-}
-
 //Table
 .table_wrapper {
   background-color: rgba(24, 24, 24, 0.022);

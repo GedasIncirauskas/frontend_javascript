@@ -3,18 +3,9 @@ import { groupURL, token } from "../URL/url.js";
 const div = document.getElementById("card_info");
 const section = document.createElement("section");
 
-//Error function
-function validationCheck() {
-  const dontShowClass = document.getElementById("not_show");
-  dontShowClass.style.display = "none";
-  section.classList = "invalid";
-  section.textContent = "You need to login";
-  div.append(section);
-}
-
 //Checking token part
 if (!token) {
-  validationCheck();
+  window.location.pathname = "../Login/login.html";
 }
 
 fetch(groupURL, {
@@ -28,7 +19,7 @@ fetch(groupURL, {
       return;
     }
     if (data.length === 0) {
-      return alert("No pages found");
+      return alert("You dont have any data");
     }
     createCard(data);
   })
