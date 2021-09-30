@@ -55,6 +55,7 @@ document.getElementById("add_bill").addEventListener("submit", (e) => {
     alert("Your data passed");
     setTimeout(() => {
       document.getElementById("add_bill").reset();
+      window.location.pathname = "../Login/login.html";
     }, 1500);
   }
   return;
