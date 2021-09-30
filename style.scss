@@ -6,7 +6,7 @@ $parameter: 0.5rem;
 
 //Main wrapper
 .container {
-  margin: 4rem auto 0 auto;
+  margin: 2rem auto 0 auto;
   width: 80%;
   .header_wrapper {
     text-align: center;
@@ -49,9 +49,9 @@ $parameter: 0.5rem;
 
 //Form wrapper
 .form_wrapper {
-  margin: 2rem auto 0 auto;
+  margin: 2rem auto 5rem auto;
   width: 20%;
-  min-height: 35vh;
+
   label {
     font-weight: bold;
   }
@@ -95,7 +95,7 @@ $parameter: 0.5rem;
   background-color: rgba(24, 24, 24, 0.022);
   padding: 3rem;
   border-radius: $parameter;
-  margin: 2rem 0;
+  margin: 2rem 0 0 0;
   table {
     border-collapse: collapse;
     width: 100%;
@@ -106,18 +106,5 @@ $parameter: 0.5rem;
     padding: $parameter;
     text-align: center;
     border-bottom: 0.1rem solid rgba(80, 80, 80, 0.166);
-  }
-}
-
-//Footer
-footer {
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  text-align: center;
-  div {
-    color: $text-color;
-    padding: 2rem 0 1rem 0;
   }
 }
