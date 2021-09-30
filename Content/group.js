@@ -37,7 +37,7 @@ function createCard(data) {
     description.textContent = `${item.name}`;
 
     section.addEventListener("click", () => {
-      openModal(item.group_id);
+      openBills(item.group_id);
     });
 
     section.append(name, description);
@@ -46,7 +46,7 @@ function createCard(data) {
 }
 
 //Pass user to bils by group_id
-function openModal(id) {
+function openBills(id) {
   window.location.href = `../Content/bills.html?id=${id}`;
 }
 
