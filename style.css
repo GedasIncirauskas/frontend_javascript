@@ -1,0 +1,118 @@
+.container {
+  margin: 4rem auto 0 auto;
+  width: 80%;
+}
+
+.container .header_wrapper {
+  text-align: center;
+}
+
+.container img {
+  width: 3rem;
+}
+
+.container h2,
+.container p {
+  margin: 0.5rem 0;
+  text-align: center;
+}
+
+.nav {
+  margin: 1rem auto 0 auto;
+  width: 70%;
+}
+
+.navigation {
+  text-align: right;
+}
+
+.navigation a {
+  text-decoration: none;
+  border: 0.01rem solid black;
+  padding: 0.5rem 1rem;
+  color: black;
+}
+
+.navigation a:hover {
+  background-color: #34a853;
+}
+
+.navigation button {
+  background-color: white;
+  padding: 0.45rem 1rem;
+}
+
+.navigation button:hover {
+  background-color: red;
+}
+
+.form_wrapper {
+  margin: 2rem auto 0 auto;
+  width: 20%;
+  min-height: 35vh;
+}
+
+.form_wrapper label,
+.form_wrapper button {
+  display: block;
+  margin: 0.5rem 0 0 0;
+  background-color: white;
+}
+
+.form_wrapper input {
+  width: 100%;
+  margin: 0.5rem 0;
+}
+
+.form_wrapper #label_group {
+  font-weight: bold;
+}
+
+.main_block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.blocks {
+  margin-right: 2rem;
+  margin-top: 1rem;
+  width: calc(20% - 7em);
+  text-align: center;
+  border: 0.2rem solid #d8d8d8;
+  border-radius: 0.5rem;
+  padding: 1rem 2rem;
+}
+
+.blocks p {
+  margin: 0.5rem;
+  color: darkgray;
+}
+
+.table_wrapper {
+  background-color: rgba(24, 24, 24, 0.022);
+  padding: 3rem;
+  border-radius: 0.5rem;
+  margin: 2rem 0;
+}
+
+.table_wrapper table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.table_wrapper th,
+.table_wrapper td {
+  padding: 0.5rem;
+  text-align: center;
+  border-bottom: 0.1rem solid rgba(80, 80, 80, 0.166);
+}
+
+footer {
+  text-align: center;
+  color: darkgray;
+  padding: 2rem 0 1rem 0;
+}
+/*# sourceMappingURL=style.css.map */
