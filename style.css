@@ -52,6 +52,10 @@
   min-height: 35vh;
 }
 
+.form_wrapper label {
+  font-weight: bold;
+}
+
 .form_wrapper label,
 .form_wrapper button {
   display: block;
@@ -111,7 +115,14 @@
 }
 
 footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
   text-align: center;
+}
+
+footer div {
   color: darkgray;
   padding: 2rem 0 1rem 0;
 }

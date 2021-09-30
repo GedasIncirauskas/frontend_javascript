@@ -52,6 +52,9 @@ $parameter: 0.5rem;
   margin: 2rem auto 0 auto;
   width: 20%;
   min-height: 35vh;
+  label {
+    font-weight: bold;
+  }
   label,
   button {
     display: block;
@@ -108,7 +111,13 @@ $parameter: 0.5rem;
 
 //Footer
 footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
   text-align: center;
-  color: $text-color;
-  padding: 2rem 0 1rem 0;
+  div {
+    color: $text-color;
+    padding: 2rem 0 1rem 0;
+  }
 }
