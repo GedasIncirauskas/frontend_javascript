@@ -55,7 +55,7 @@ document.getElementById("add_bill").addEventListener("submit", (e) => {
     alert("Your data passed");
     setTimeout(() => {
       document.getElementById("add_bill").reset();
-      window.location.pathname = "../Login/login.html";
+      window.location.href = `../Content/bills.html?id=${group_id}`;
     }, 1500);
   }
   return;
